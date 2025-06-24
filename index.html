@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubricentro Pilar - Cuidamos tu motor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="car-animation">
+                <i class="fas fa-car"></i>
+            </div>
+            <div class="gear-animation">
+                <i class="fas fa-cog"></i>
+            </div>
+            <h2>Lubricentro Pilar</h2>
+            <p>Preparando tu motor para rodar...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Lubricentro Pilar</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Lubricentro Pilar</h1>
+            <p class="hero-subtitle">Cuidamos tu motor como si fuera nuestro.</p>
+            <p class="hero-description">Especialistas en mantenimiento rápido y eficiente.</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <h2 class="section-title">🛠️ Nuestros Servicios</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card" data-aos="fade-up">
+                    <div class="servicio-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Cambio de aceite del motor</h3>
+                    <p>Reemplazo del aceite usado (mineral, sintético o semi). Limpieza interna del motor si es necesario (flush).</p>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="servicio-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Cambio de filtros</h3>
+                    <p>Filtro de aceite, aire, combustible y habitáculo (aire acondicionado interior).</p>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="servicio-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Revisión y recarga de fluidos</h3>
+                    <p>Frenos, refrigerante, hidráulico y transmisión.</p>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="servicio-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Engrase de partes móviles</h3>
+                    <p>Aplicación de grasa en suspensión y tren delantero.</p>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="servicio-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Control general del vehículo</h3>
+                    <p>Estado de batería, correas, luces, neumáticos y diagnóstico rápido.</p>
+                </div>
+                
+                <div class="servicio-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="servicio-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Venta de productos</h3>
+                    <p>Aceites, aditivos, refrigerantes, escobillas y accesorios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <div class="nosotros-content" data-aos="fade-up">
+                <h2 class="section-title">Somos Lubricentro Pilar</h2>
+                <p class="nosotros-text">
+                    Un taller local atendido por especialistas con años de experiencia. 
+                    Nos dedicamos al mantenimiento preventivo y confiable para que tu vehículo 
+                    siempre esté listo para salir a la ruta.
+                </p>
+                <div class="nosotros-image">
+                    <i class="fas fa-wrench"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Lubricentro Pilar. Todos los derechos reservados.</p>
+            <p>Desarrollado por <a href="https://overmindstudio.com" target="_blank">Overmind</a></p>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
