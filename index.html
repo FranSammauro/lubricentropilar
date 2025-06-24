@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lubricentro Pilar - Cuidamos tu motor</title>
+    <title>Lubricentro Pilar - Mantenimiento Automotriz Premium</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Pantalla de carga -->
-    <div id="loading-screen">
+    <!-- Pantalla de Carga -->
+    <div id="loading-screen" class="loading-screen">
         <div class="loading-content">
-            <div class="car-animation">
-                <i class="fas fa-car"></i>
+            <div class="loading-animation">
+                <div class="car-container">
+                    <i class="fas fa-car car-icon"></i>
+                    <div class="oil-drops">
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                        <div class="drop"></div>
+                    </div>
+                </div>
+                <div class="gear-container">
+                    <i class="fas fa-cog gear-1"></i>
+                    <i class="fas fa-cog gear-2"></i>
+                </div>
             </div>
-            <div class="gear-animation">
-                <i class="fas fa-cog"></i>
+            <h2 class="loading-title">Lubricentro Pilar</h2>
+            <p class="loading-subtitle">Preparando tu motor...</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
-            <h2>Lubricentro Pilar</h2>
-            <p>Preparando tu motor para rodar...</p>
         </div>
     </div>
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <h2>Lubricentro Pilar</h2>
+                    <i class="fas fa-oil-can"></i>
+                    <span>Lubricentro Pilar</span>
                 </div>
                 <ul class="nav-menu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                    <li><a href="#proceso" class="nav-link">Proceso</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -46,85 +63,392 @@
 
     <!-- Hero Section -->
     <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h1 class="hero-title">Lubricentro Pilar</h1>
-            <p class="hero-subtitle">Cuidamos tu motor como si fuera nuestro.</p>
-            <p class="hero-description">Especialistas en mantenimiento rápido y eficiente.</p>
-            <div class="scroll-indicator">
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Lubricentro</span>
+                    <span class="title-line highlight">Pilar</span>
+                </h1>
+                <p class="hero-subtitle">Rápido, confiable y con atención personalizada</p>
+                <p class="hero-description">Más de 10 años cuidando tu motor con la mejor tecnología y productos premium</p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                    <a href="#ubicacion" class="btn btn-secondary">Ubicación</a>
+                </div>
             </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Años</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Clientes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30min</span>
+                    <span class="stat-label">Servicio</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
     <!-- Servicios -->
     <section id="servicios" class="servicios">
         <div class="container">
-            <h2 class="section-title">🛠️ Nuestros Servicios</h2>
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Mantenimiento completo para tu vehículo</p>
+            </div>
             <div class="servicios-grid">
                 <div class="servicio-card" data-aos="fade-up">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-oil-can"></i>
                     </div>
-                    <h3>Cambio de aceite del motor</h3>
-                    <p>Reemplazo del aceite usado (mineral, sintético o semi). Limpieza interna del motor si es necesario (flush).</p>
+                    <h3>Cambio de Aceite</h3>
+                    <p>Aceite mineral, sintético o semi-sintético con filtro incluido</p>
+                    <div class="card-price">Desde $15.000</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Aceite de primera calidad</li>
+                            <li>✓ Filtro de aceite nuevo</li>
+                            <li>✓ Revisión de niveles</li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="servicio-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-filter"></i>
                     </div>
-                    <h3>Cambio de filtros</h3>
-                    <p>Filtro de aceite, aire, combustible y habitáculo (aire acondicionado interior).</p>
+                    <h3>Cambio de Filtros</h3>
+                    <p>Filtros de aceite, aire, combustible y habitáculo</p>
+                    <div class="card-price">Desde $8.000</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Filtro de aceite</li>
+                            <li>✓ Filtro de aire</li>
+                            <li>✓ Filtro de combustible</li>
+                            <li>✓ Filtro habitáculo</li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="servicio-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-tint"></i>
                     </div>
-                    <h3>Revisión y recarga de fluidos</h3>
-                    <p>Frenos, refrigerante, hidráulico y transmisión.</p>
+                    <h3>Fluidos</h3>
+                    <p>Revisión y recarga de todos los fluidos del vehículo</p>
+                    <div class="card-price">Desde $12.000</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Líquido de frenos</li>
+                            <li>✓ Refrigerante</li>
+                            <li>✓ Aceite hidráulico</li>
+                            <li>✓ Transmisión</li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="servicio-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Engrase de partes móviles</h3>
-                    <p>Aplicación de grasa en suspensión y tren delantero.</p>
+                    <h3>Engrase</h3>
+                    <p>Lubricación completa de partes móviles</p>
+                    <div class="card-price">Desde $6.000</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Suspensión completa</li>
+                            <li>✓ Tren delantero</li>
+                            <li>✓ Articulaciones</li>
+                            <li>✓ Rótulas</li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="servicio-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>Control general del vehículo</h3>
-                    <p>Estado de batería, correas, luces, neumáticos y diagnóstico rápido.</p>
+                    <h3>Diagnóstico</h3>
+                    <p>Control general del estado del vehículo</p>
+                    <div class="card-price">Desde $5.000</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Estado de batería</li>
+                            <li>✓ Correas y tensores</li>
+                            <li>✓ Sistema eléctrico</li>
+                            <li>✓ Neumáticos</li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="servicio-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="servicio-icon">
+                    <div class="card-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3>Venta de productos</h3>
-                    <p>Aceites, aditivos, refrigerantes, escobillas y accesorios.</p>
+                    <h3>Productos</h3>
+                    <p>Venta de aceites, aditivos y accesorios</p>
+                    <div class="card-price">Consultar</div>
+                    <div class="card-hover">
+                        <ul>
+                            <li>✓ Aceites premium</li>
+                            <li>✓ Aditivos especiales</li>
+                            <li>✓ Refrigerantes</li>
+                            <li>✓ Accesorios</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre Nosotros -->
+    <!-- Beneficios -->
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <p class="section-subtitle">La mejor experiencia en mantenimiento automotriz</p>
+            </div>
+            <div class="beneficios-grid">
+                <div class="beneficio-item" data-aos="zoom-in">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Atención Inmediata</h3>
+                    <p>Sin turno previo, te atendemos por orden de llegada</p>
+                </div>
+                <div class="beneficio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>+10 Años de Experiencia</h3>
+                    <p>Década de experiencia cuidando motores</p>
+                </div>
+                <div class="beneficio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Productos Premium</h3>
+                    <p>Solo trabajamos con marcas de primera calidad</p>
+                </div>
+                <div class="beneficio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Servicio en 30min</h3>
+                    <p>Cambio completo en tiempo récord</p>
+                </div>
+                <div class="beneficio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="beneficio-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Taller Confiable</h3>
+                    <p>Ambiente cómodo y seguro para tu vehículo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso -->
+    <section id="proceso" class="proceso">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Así Trabajamos</h2>
+                <p class="section-subtitle">Nuestro proceso paso a paso</p>
+            </div>
+            <div class="proceso-timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Recepción y Revisión</h3>
+                        <p>Te recibimos cordialmente y revisamos el estado actual de tu vehículo</p>
+                        <i class="fas fa-clipboard-check timeline-icon"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Servicio Completo</h3>
+                        <p>Realizamos el cambio de aceite, filtros y engrase con productos premium</p>
+                        <i class="fas fa-tools timeline-icon"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Control de Calidad</h3>
+                        <p>Chequeamos niveles, funcionamiento y realizamos pruebas finales</p>
+                        <i class="fas fa-search timeline-icon"></i>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Entrega y Consejos</h3>
+                        <p>Entrega rápida con recomendaciones útiles para el mantenimiento</p>
+                        <i class="fas fa-handshake timeline-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
     <section id="nosotros" class="nosotros">
         <div class="container">
-            <div class="nosotros-content" data-aos="fade-up">
-                <h2 class="section-title">Somos Lubricentro Pilar</h2>
-                <p class="nosotros-text">
-                    Un taller local atendido por especialistas con años de experiencia. 
-                    Nos dedicamos al mantenimiento preventivo y confiable para que tu vehículo 
-                    siempre esté listo para salir a la ruta.
-                </p>
-                <div class="nosotros-image">
-                    <i class="fas fa-wrench"></i>
+            <div class="nosotros-content">
+                <div class="nosotros-text" data-aos="fade-right">
+                    <h2 class="section-title">Un Equipo Comprometido</h2>
+                    <p>Somos un equipo familiar con más de una década en el rubro. Nos apasiona brindarte el mejor servicio sin vueltas, con la calidez humana que nos caracteriza.</p>
+                    <p>Cada vehículo que ingresa a nuestro taller recibe la misma atención y cuidado que le daríamos al nuestro propio.</p>
+                    <div class="nosotros-stats">
+                        <div class="stat">
+                            <span class="stat-num">5000+</span>
+                            <span class="stat-text">Clientes Satisfechos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">10+</span>
+                            <span class="stat-text">Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nosotros-image" data-aos="fade-left">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <p>Nuestro Equipo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro Taller</h2>
+                <p class="section-subtitle">Conocé nuestras instalaciones</p>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item" data-aos="zoom-in">
+                    <div class="image-placeholder">
+                        <i class="fas fa-warehouse"></i>
+                        <p>Instalaciones</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="image-placeholder">
+                        <i class="fas fa-car"></i>
+                        <p>Área de Trabajo</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="image-placeholder">
+                        <i class="fas fa-oil-can"></i>
+                        <p>Productos</p>
+                    </div>
+                </div>
+                <div class="galeria-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="image-placeholder">
+                        <i class="fas fa-tools"></i>
+                        <p>Herramientas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Resolvemos tus dudas</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tarda el servicio completo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generalmente entre 20 y 40 minutos, dependiendo del tipo de servicio requerido.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>¿Qué tipo de aceite utilizan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trabajamos con marcas premium como Shell, Total, Castrol, adaptándonos a las especificaciones de cada vehículo.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>¿Necesito sacar turno?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No es necesario. Te atendemos por orden de llegada para mayor comodidad.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>¿Qué formas de pago aceptan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos efectivo, tarjetas de débito, crédito y Mercado Pago.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="ubicacion">
+        <div class="container">
+            <div class="ubicacion-content">
+                <div class="ubicacion-info" data-aos="fade-right">
+                    <h2 class="section-title">Encontranos en Pilar</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. Principal 1234, Pilar, Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 8:00 - 13:00</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+54 11 1234-5678</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ubicacion-map" data-aos="fade-left">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Ubicación en Pilar</p>
+                        <span>Fácil acceso y estacionamiento</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -133,12 +457,43 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Lubricentro Pilar. Todos los derechos reservados.</p>
-            <p>Desarrollado por <a href="https://overmindstudio.com" target="_blank">Overmind</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-oil-can"></i>
+                        <span>Lubricentro Pilar</span>
+                    </div>
+                    <p>Mantenimiento rápido, atención confiable.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li>Cambio de Aceite</li>
+                        <li>Filtros</li>
+                        <li>Fluidos</li>
+                        <li>Diagnóstico</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Pilar, Buenos Aires</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lubricentro Pilar. Sitio web desarrollado por <a href="https://overmindstudio.com" target="_blank">Overmind</a>.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Botón volver arriba -->
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5491112345678?text=Hola!%20Quiero%20hacer%20una%20consulta%20sobre%20el%20lubricentro." class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
     <button id="back-to-top" class="back-to-top">
         <i class="fas fa-chevron-up"></i>
     </button>
